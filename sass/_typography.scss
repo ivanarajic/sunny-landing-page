@@ -1,0 +1,62 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+}
+
+h1 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: $color-white;
+  font-size: 5.4rem;
+  letter-spacing: 1rem;
+
+  @media only screen and (max-width: $breakpoint-large) {
+    font-size: 4rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-medium) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-small) {
+    white-space: normal;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+  }
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  color: $color-blue-dark-1;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  font-size: 3.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+  color: $color-blue-dark-3;
+}
+
+.testimonials-heading {
+  letter-spacing: 0.5rem;
+  margin: 6rem 2rem;
+  color: $color-blue-dark-4;
+  text-transform: uppercase;
+}

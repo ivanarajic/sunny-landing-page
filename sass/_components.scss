@@ -1,0 +1,90 @@
+.btn-learn:link,
+.btn-learn:visited {
+  position: relative;
+  margin-top: 5rem;
+  font-family: "Fraunces", serif;
+  color: $color-blue-dark-1;
+  text-transform: uppercase;
+  z-index: 111;
+}
+
+.btn-learn--yellow {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    border-radius: 20px;
+    border: 5px solid $color-primary-yellow;
+    width: 110%;
+    z-index: -1;
+    opacity: 30%;
+  }
+}
+
+.btn-learn--yellow:active,
+.btn-learn--yellow:hover {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    border-radius: 20px;
+    border: 5px solid $color-primary-yellow;
+    width: 110%;
+    z-index: -1;
+    opacity: 100%;
+  }
+}
+
+.btn-learn--red {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    border-radius: 20px;
+    border: 5px solid $color-primary-red;
+    width: 110%;
+    z-index: -1;
+    opacity: 30%;
+  }
+}
+
+.btn-learn--red:active,
+.btn-learn--red:hover {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    border-radius: 20px;
+    border: 5px solid $color-primary-red;
+    width: 110%;
+    z-index: -1;
+    opacity: 100%;
+  }
+}
+
+// @media only screen and (max-width: $breakpoint-tab-p)
+
+.btn-menu {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  background-color: transparent;
+  border: none;
+  display: none;
+  @media only screen and (max-width: $breakpoint-tab) {
+    display: inline-block;
+  }
+}
+.btn-open {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-close {
+  cursor: pointer;
+  display: none;
+}

@@ -1,0 +1,132 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+
+  @media only screen and (max-width: $breakpoint-tab) {
+    background-image: url("../images/mobile/image-header.jpg");
+    background-position: 60% 80%;
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4rem 3.6rem;
+    @media only screen and (max-width: $breakpoint-small) {
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    height: 3.4rem;
+  }
+
+  &-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.nav {
+  &::after {
+    @media only screen and (max-width: $breakpoint-tab) {
+      content: "";
+      position: absolute;
+      width: 4rem;
+      height: 4rem;
+      top: -10%;
+      right: 0;
+
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+      background-color: $color-white;
+      z-index: 10111;
+    }
+  }
+
+  @media only screen and (max-width: $breakpoint-tab) {
+    margin-top: 3.6rem;
+    width: 80%;
+    height: 25rem;
+    position: absolute;
+    background-color: #fff;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 555;
+
+    display: none;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+
+    @media only screen and (max-width: $breakpoint-tab) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+    }
+  }
+
+  &__item {
+    padding: 0 2.4rem;
+
+    @media only screen and (max-width: $breakpoint-tab) {
+      padding: 1.4rem 0;
+    }
+  }
+
+  &__item:last-child {
+    padding-top: 2.6rem;
+  }
+
+  &__link {
+    color: $color-white;
+
+    @media only screen and (max-width: $breakpoint-tab) {
+      color: $color-blue-dark-4;
+    }
+  }
+}
+.nav-open {
+  display: block;
+}
+
+.btn:link,
+.btn:visited {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: $color-blue-dark-1;
+  padding: 1.6rem 3rem;
+  border-radius: 50px;
+  background-color: $color-white;
+
+  @media only screen and (max-width: $breakpoint-tab) {
+    background-color: $color-primary-yellow;
+  }
+}
+
+.btn:active,
+.btn:hover {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: $color-white;
+  padding: 1.6rem 3rem;
+  border-radius: 50px;
+  background-color: rgb(109, 206, 253);
+}

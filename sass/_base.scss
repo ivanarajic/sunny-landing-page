@@ -1,0 +1,49 @@
+$color-primary-red: hsl(7, 99%, 70%);
+$color-primary-yellow: hsl(51, 100%, 49%);
+$color-primary-cyan-dark: hsl(167, 40%, 24%);
+$color-primary-blue-dark: hsl(198, 62%, 26%);
+$color-primary-cyan-light: hsl(168, 34%, 41%);
+$color-primary-cyan-light-2: hsl(168, 32%, 69%);
+
+$color-blue-dark-1: hsl(212, 27%, 19%);
+$color-blue-dark-2: hsl(213, 9%, 39%);
+$color-blue-dark-3: hsl(232, 10%, 55%);
+$color-blue-dark-4: hsl(210, 4%, 67%);
+
+$color-white: hsl(0, 0%, 100%);
+
+$breakpoint-largest: 112.5em;
+$breakpoint-large: 92em;
+$breakpoint-medium: 75em;
+$breakpoint-tab-land: 60em;
+$breakpoint-tab: 50em;
+$breakpoint-small: 37.5em; // bellow 600px
+$breakpoint-mobile: 25.5em;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    font-size: 85%;
+  }
+  @media only screen and (max-width: $breakpoint-tab-land) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif;
+}

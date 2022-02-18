@@ -1,0 +1,49 @@
+.testimonials {
+  padding: 10rem 20rem;
+  @media only screen and (max-width: $breakpoint-medium) {
+    padding: 8rem 12rem;
+  }
+  @media only screen and (max-width: $breakpoint-mobile) {
+    padding: 4rem 8rem;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      flex-direction: column;
+    }
+  }
+}
+
+.testimonial {
+  @media only screen and (max-width: $breakpoint-medium) {
+    padding: 5rem 0;
+  }
+
+  &__figure {
+    text-align: center;
+
+    p {
+      font-size: 1.6rem;
+      margin-top: 1rem;
+      opacity: 70%;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 7rem;
+  }
+
+  &__text {
+    line-height: 1.6;
+    margin: 4.6rem 0;
+    color: $color-blue-dark-2;
+  }
+}
