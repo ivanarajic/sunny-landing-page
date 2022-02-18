@@ -91,8 +91,10 @@
     }
   }
 
-  &__item:last-child {
-    padding-top: 2.6rem;
+  @media only screen and (max-width: $breakpoint-tab) {
+    &__item:last-child {
+      padding-top: 2.6rem;
+    }
   }
 
   &__link {
